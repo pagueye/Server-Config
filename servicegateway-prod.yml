@@ -1,0 +1,12 @@
+server:
+  port: 9899
+spring:
+  application:
+    name: servicegateway
+  cloud:
+    gateway:
+      routes:
+        - id: serviceschool
+          uri: lb://serviceschool
+          predicates:
+              - Path=/api/teacher/**,/api/student/**,/api/course/**,/api/mat/**
