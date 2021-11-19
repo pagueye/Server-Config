@@ -10,9 +10,3 @@ spring:
           uri: lb://serviceschool
           predicates:
               - Path=/api/teacher/**,/api/student/**,/api/course/**,/api/mat/**
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "http://localhost:4200"
-            allowedMethods:
-            - GET
