@@ -13,6 +13,6 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "https://docs.spring.io"
+            allowedOrigins: "http://localhost:4200"
             allowedMethods:
             - GET
